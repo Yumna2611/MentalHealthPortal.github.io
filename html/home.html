@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+   <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="home_style.css">
+	<title>Welcome!!</title>
+</head>
+<body>
+    <!-- Navigation -->
+<header>
+  <img src = "images/icon.jpg"  height="60px" width ="60px" alt="">
+    <a href="#" class="logo">Mental-Help<span>!</span></a>
+    <div class = "menuToggle" onclick="toggleMenu(); "></div>
+    <ul class="navigation">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="screening.html">Screening Tests</a></li>
+        <li><a href="social_hub.html">Social Hub</a></li>
+        <li><a href="queries.html">Queries</a></li>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="margin-left: 1rem;"><img style="height: 2rem; width:2rem; border-radius: 100%;" src="https://www.pngfind.com/pngs/m/434-4349797_png-file-vector-profile-icon-svg-transparent-png.png"></button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="user_profile.php">View profile</a></li>
+            <li><a class="dropdown-item" href="logout.php">logout</a></li>
+          </ul>
+        </div>
+   </ul>
+</header>
+  <!---------------NAVBAR------------------->
+  <!-- <div id="navbar">
+    <a style="margin-left: 0.75rem; font-size: 2.5rem;">Mental-Health<a style="color: blue; font-size: 2.5rem;">!</a></a>
+    <a style="float: right;" href="logout.php">Logout</a>
+    <a style="float: right" href="user_profile.php">Profile</a>
+    <a style="float: right" href="queries.html">Queries</a>
+    <a style="float: right;" href="social_hub.html">Social Hub</a>
+    <a style="float: right" href="screening.html">Screening Test</a>
+  </div>  -->
+
+  <script>
+    // Sticky navbar 
+window.addEventListener('scroll', function() {
+   const header = document.querySelector('header');
+   header.classList.toggle("sticky", window.scrollY > 0);
+});
+
+// Responsive navbar
+function toggleMenu() {
+   const menuToggle = document.querySelector('.menuToggle');
+   const navigation = document.querySelector('.navigation');
+   menuToggle.classList.toggle('active');
+   navigation.classList.toggle('active');
+}
+</script>
+  <!-- <script type="text/javascript">
+        // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
+
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script> -->
+
+   <!----------------INTRO------------------>
+   <section id="intro" class="intro">
+   	<div>
+   		<p id="outer-line">Mental Health <u>is</u> Health.</p>
+   		<p id="inner-line">We all have mental health!!</p>
+   	</div>
+   	<div >
+   		<p id="health">Our emotional health can range from thriving to struggling. No matter what you’re experiencing, there are ways to take action to support yourself and those around you.</p>
+   	</div>
+   		<p id="breath">Breathe in - Breathe out</p>
+   </section>
+
+   <!--------------TWO-COLUMNS--------->
+   <div class="happy">
+   <div class="row">
+      <div class="column1">
+        <center><img id="happy_man" src="images/happy_man.png"></center>
+      </div>
+      <div class="column2">
+        <p><b>Take control of your emotional health.</b></p>
+        <h2>Whether it’s for you or a friend you care about, there are always things we can do to strengthen our emotional health and support others.</h2>
+      </div>
+   </div>
+  </div>
+
+   <!-------------WORKING----------->
+   <div class="work-flow">
+    <div id="work-flow">
+    <center><p style="font-size: 2.5rem;text-shadow: 0.15rem 0.15rem 0.15rem darkgrey;"><b>How it works?</b></p></center>
+    <div class="container-work">
+    <div class="flow-box">
+      <img class="flow-img" src="images/screening.png">
+      <br><br>
+      <h3><b>1. SCREENING TEST</b></h3>
+    </div>
+    <div class="flow-box">
+      <img class="flow-img" src="images/report.png">
+      <br><br>
+      <h3><b>2. GET REPORT</b></h3>
+    </div>
+    <div class="flow-box">
+      <img class="flow-img" src="images/doctor.png">
+      <br><br>
+      <h3><b>3. CONSULTATION</b></h3>
+    </div>
+  </div>
+  </div>
+</div>
+  <!-----------FACTS----------->
+  <center><p style="font-size: 2.5rem;text-shadow: 0.15rem 0.15rem 0.15rem darkgrey;"><b>Facts about Mental Health</b></p>
+    <div class="facts">
+    <br><br><br>
+    <div class="fact_wrap"><div class="fact_move">
+      <div class="fact_item">*One out of every five Indians is suffering from a mental disorder.</div>
+        <div class="fact_item">*A WHO report suggests that India is the most depressed country in the world.</div>
+        <div class="fact_item">*Only about one in ten people with mental health disorders are thought to receive evidence-based treatment</div>
+      </div>  
+    </div>
+    <br>
+    <br><br><br>
+    <center><button id="facts-btn" ><b>LEARN MORE ABOUT MENTAL HEALTH</b></button></center>   
+    <script type="text/javascript">
+        document.getElementById("facts-btn").onclick = function () {
+            location.href = "social_hub.html";
+        };
+    </script>
+  </div></center>
+  <br><br><br>
+
+<!-------------ALL-TESTS----------->
+   <div class="all-test">
+    <div id="all-test">
+    <center><p style="font-size: 2.5rem;text-shadow: 0.15rem 0.15rem 0.15rem darkgrey;"><b>Screening Tests</b></p></center>
+    <div class="container-test">
+    <div class="test-box">
+      <img class="test-img" src="images/alcohol.png">
+      <br><br>
+      <h3>ALCOHOL ADDICTION</h3>
+    </div>
+    <div class="test-box">
+      <img class="test-img" src="images/anxiety.png">
+      <br><br>
+      <h3>GENERAL ANXIETY</h3>
+    </div>
+    <div class="test-box">
+      <img class="test-img" src="images/depression.png">
+      <br><br>
+      <h3>DEPRESSION</h3>
+    </div>
+    <div class="test-box">
+      <img class="test-img" src="images/smoking.png">
+      <br><br>
+      <h3>SMOKING ADDICTION</h3>
+    </div>
+      </div>  
+  <center><button id="view-all"><b>VIEW ALL</b></button></center>
+  <script type="text/javascript">
+        document.getElementById("view-all").onclick = function () {
+            location.href = "screening.html";
+        };
+    </script>
+  </div>
+
+  <!--------- BACK TO TOP --------->
+  <div class="b_top">
+    <center><a href="#intro">Back to top   <i class="arrow up"></i></a></center>
+  </div>
+
+<!---------FOOTER----------->
+   <footer class="footer">
+    <div class="footer-container">
+     <div class="row">
+       <div class="footer-col">
+         <h4><b>ADDRESS</b></h4>
+         <ul>
+           <li><a href="#">Lorem Ipsum dolor, 234
+             1200 Consecteur
+             Adipiscing</a></li>
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4><b>FOLLOW US</b></h4>
+         <div class="social-links">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-youtube"></i>
+          <p>© 2022, Mental-Help</p>
+        </div>
+       </div>
+       <div class="footer-col">
+         <h4><b>CONTACT US</b></h4>
+         <ul>
+           <li><a href="#">+123 456 789</a></li>
+           <li><a href="#">mental_health@skype</a></li>
+           <li><a href="#">enquiry@mentalhealth.com</a></li>
+         </ul>
+       </div>
+     </div>
+    </div>
+  </footer>
+  <script>!function(e,t,a){var c=e.head||e.getElementsByTagName("head")[0],n=e.createElement("script");n.async=!0,n.defer=!0, n.type="text/javascript",n.src=t+"/static/js/chat_widget.js?config="+JSON.stringify(a),c.appendChild(n)}(document,"https://app.engati.com",{bot_key:"fb07546b98da451f",welcome_msg:true,branding_key:"default",server:"https://app.engati.com",e:"p" });</script>                       
+                  
+
+
+</body>
+</html>
