@@ -1,0 +1,234 @@
+body{
+    background-color: #fce3f8;
+}
+/*--------------------------Navbar--------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+header {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header.sticky {
+    background: rgb(249, 249, 250);
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05); 
+} 
+header .logo {
+    color: #111;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+header .sticky .logo {
+    color: #fff;
+}
+header .logo span {
+    color:darkblue;
+}
+header .navigation {
+    position: relative;
+    display: flex;
+}
+header .navigation li {
+    list-style: none;
+    margin-left: 20px;
+}
+header .navigation li a {
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+header .sticky .naviagtion li a {
+    color:rgb(3, 3, 3);
+}
+header .navigation li a:hover {
+    color: rgb(20, 24, 250);
+  }
+section {
+    padding: 100px;
+}
+
+/*-------------------------Carousel------------------------------*/
+.nav-intro {
+	position: absolute;
+	bottom: 200px;
+	color: white;
+	text-shadow: 2px 2px black;
+}
+
+.learn-more button {
+	align-items: center;
+	background-color: rgb(78 28 70);
+	color: white;
+	padding: 7px;
+}
+
+.learn-more button:hover {
+	background-color: rgb(251, 251, 97);
+	color: black;
+}
+
+/* ----------------------Screening test----------------------------*/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 3px;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 0 4px;
+    position:relative;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    margin-left: 40px;
+    width: 350px;
+    height: 350px;
+    padding:15px;
+    border-radius: 50px ;
+    box-shadow: 5px 5px #f1b7b7;
+  }
+
+  .column img:hover{
+    filter: opacity(70%);
+    transform: scale(1.1);
+	  animation: mymove 3s infinite;
+  }
+
+  @keyframes mymove {
+    25% {
+      box-shadow: 10px 20px 20px #f1b7b7;
+    }
+  }
+
+  .text{
+    position:absolute;
+    font-size: 28px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    z-index: 1;
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+
+
+  /*****footer*****/                                                      
+  .footer-container{
+    margin-right: 4rem;
+    margin-left: 4rem;
+  }
+  
+  .foot-row{
+    display: flex;
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  
+  ul{
+    list-style: none;
+  }
+  
+  .footer{
+    background-color: #587375;
+    color: white;
+    padding: 3rem 0;
+    font-size: 0.25rem;
+  }
+  
+  .footer-col{
+     width: 30%;
+     margin-left: 2rem;
+  }
+  
+  .footer-col h4{
+    font-size: 1rem;
+    color: #521a39;
+    text-transform: capitalize;
+    margin-bottom: 3.5rem;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  h4{
+    margin-left: 2.5rem;
+    text-align: left;
+  }
+  
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -2rem;
+    background-color: #fce354;
+    height: .5rem;
+    box-sizing: border-box;
+    width: 5rem;
+  }
+  
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 1rem;
+  }
+  
+  .footer-col ul li a{
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: white;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-col ul li a:hover{
+    color: #000000;
+    font-size: 1.25rem;
+    padding-left: .8rem;
+  }
+  .social-links {
+    text-align: center;
+  }
+  .social-links .fa{
+    height: 25px;
+    width: 25px;
+    font-size: 20px;
+    margin-left: 0.75rem;
+    line-height: 25px;
+    color: rgb(223, 223, 233);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .social-links .fa:hover {
+    background: #8fb091;
+    color: #fff;
+    border-radius: 100%;
+    transform: translateY(-7px);
+  }
+  .social-links p {
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  
+  .footer-col {
+    margin-right: 2rem;
+  }

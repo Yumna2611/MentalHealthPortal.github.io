@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* banner  */
+
+.banner {
+  background: linear-gradient(rgba(230, 221, 221, 0.5),#a2bcec);
+  background-size: cover;
+}
+
+/*********** Navbar ************/
+header {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    padding: 10px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header.sticky {
+    background: rgb(249, 249, 250);
+    padding: 10px 100px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05); 
+} 
+header .logo {
+    color: #111;
+    font-weight: 600;
+    font-size: 2em;
+    text-decoration: none;
+}
+header .sticky .logo {
+    color: #fff;
+}
+header .logo span {
+    color:darkblue;
+}
+header .navigation {
+    position: relative;
+    display: flex;
+}
+header .navigation li {
+    list-style: none;
+    margin-left: 20px;
+}
+header .navigation li a {
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+    font-weight: 500;
+    font-size: 1.25rem;
+    font-family: sans-serif;
+}
+header .sticky .naviagtion li a {
+    color:rgb(3, 3, 3);
+}
+header .navigation li a:hover {
+    color: rgb(20, 24, 250);
+  }
+section {
+    padding: 100px;
+}
+
+
+
+/*********** Genres *********/
+
+.title {
+    color:#111;
+    font-size: 2em;
+    font-weight: 300;
+}
+.title span {
+    color: darkblue;
+    font-weight: 700;
+    font-size: 2em;
+}
+.menu {
+    background-color: rgb(235, 226, 226);
+    height: 800px;
+}  
+.titles {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.menu .content .box {
+    width: 210px;
+    margin:15px;
+    border: 7px solid rgb(235, 222, 222);
+    box-shadow: 0 5px 35px rgb(0, 0, 0, 0.08);
+    transition: 0.6s;
+}
+.menu .content .box:hover {
+  box-shadow: 10px 10px 50px rgb(96, 97, 102);
+  -moz-box-shadow: 10px 10px 50px rgb(144, 142, 160);
+  -webkit-box-shadow: 10px 10px 50px  rgb(92, 89, 89);
+  -khtml-box-shadow: 10px 10px 50px  rgb(95, 93, 93);
+ }
+.menu .content .box .imgBx {
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+.menu .content .box .imgBx img {
+    position: absolute;
+    top : 0;
+    left : 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.menu .content .box .text {
+    padding: 15px 0 5px;
+}
+.menu .content .box .text h3 {
+    font-weight: 500;
+    color: #111;
+    text-align: center;
+}
+.menu .content .box .text h3:hover {
+    color: #111;
+}
+
+/************Videos***********/
+.videoslider{
+    display: flex;
+    overflow: scroll;
+    align-items: stretch;
+    justify-content: center;
+    margin-left: 10px;
+  }
+  ::-webkit-scrollbar {
+    width: 0;  
+    background: transparent;  
+  }
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+  .my-video{
+    padding-left: 1%;
+  }
+  .videos{
+      background-color:#f7fdd1;
+      color:black;
+      padding-top: 2px;
+      padding-bottom: 5%;
+      margin-left: 10px;
+  }
+.marquee-wrapper {
+      overflow: hidden;
+  }
+.marquee {
+      display: flex;
+      animation-name: marquee;
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-direction: alternate;
+      transform: translateX(0);
+  }
+   @keyframes marquee {
+    from {transform: translateX(0);}
+    to {transform: translateX(-200%);}
+  }
+  
+  
+  /**********Social Hub ***********/
+  .lifebg {
+    background-color: #e4dee4;
+    
+  }
+  .image_gal {
+    height: 500px;
+    width: 100%;
+   
+  }
+  
+  .small_img {
+    cursor: pointer;
+    width: 100%;
+  }
+
+  
+/***********Expert Talk********/
+.revbg {
+  background-color: #e9fae4;;
+}
+#reviews {
+  width: 100%;
+  padding: 20px 0;
+}
+.rev-row{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.rev-col {
+  flex-basis: 40%;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px 3px rgb(139, 95, 136);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.rev-col p {
+  font-size: 12px;
+}
+
+.rev-col:hover{
+  transform: translateY(-7px);
+}
+
+
+/*footer*/
+.footer-container{
+  margin-right: 4rem;
+  margin-left: 4rem;
+}
+
+.row{
+  display: flex;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+ul{
+  list-style: none;
+}
+
+.footer{
+  background-color: #587375;
+  color: white;
+  padding: 3rem 0;
+  font-size: 0.25rem;
+}
+
+.footer-col{
+   width: 25%;
+   margin-left: 2rem;
+}
+
+.footer-col h4{
+  font-size: 1rem;
+  color: #521a39;
+  text-transform: capitalize;
+  margin-bottom: 3.5rem;
+  font-weight: 500;
+  position: relative;
+}
+
+h4{
+  margin-left: 2.5rem;
+  text-align: left;
+}
+
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -2rem;
+  background-color: #fce354;
+  height: .5rem;
+  box-sizing: border-box;
+  width: 5rem;
+}
+
+.footer-col ul li:not(:last-child){
+  margin-bottom: 1rem;
+}
+
+.footer-col ul li a{
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: white;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+  color: #aca9e0;
+  padding-left: .8rem;
+}
+.social-links {
+  text-align: center;
+}
+.social-links .fa{
+  height: 35px;
+  width: 35px;
+  font-size: 20px;
+  line-height: 25px;
+  color: rgb(223, 223, 233);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.social-links .fa:hover {
+  background: #f7d5d5;
+  color: #fff;
+  border-radius: 100%;
+  transform: translateY(-7px);
+}
+.social-links p {
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.footer-col {
+  margin-right: 2rem;
+}
+  
