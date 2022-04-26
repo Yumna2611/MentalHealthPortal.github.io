@@ -4,8 +4,6 @@ This platform will support adolescents and PwD’s with Mental Health issues and
 
 **Programming languages used: HTML, CSS, JS, PHP** 
 
-**Deployment on Heroku platform**
-
 **Features:**
 1. Login/Signup validation
 2. Screening tests
